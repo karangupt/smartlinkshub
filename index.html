@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Smart shortcut hub for daily needs like PAN, Aadhaar, IRCTC, etc.">
+  <title>SmartLinks Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>SmartLinks Hub</h1>
+    <input type="text" id="searchBar" placeholder="Search...">
+  </header>
+  <main id="gridContainer">
+    <div class="box" data-tags="pan card gov nsdl">
+      <h3>PAN Card</h3>
+      <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank">Apply / Update</a>
+    </div>
+    <div class="box" data-tags="music audio streaming songs">
+      <h3>Music</h3>
+      <select onchange="window.open(this.value)">
+        <option value="">Choose a platform</option>
+        <option value="https://open.spotify.com">Spotify</option>
+        <option value="https://music.youtube.com">YouTube Music</option>
+      </select>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 SmartLinks Hub. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
